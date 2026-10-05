@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contribute to Microsoft Discovery | MDQ Content Publication</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#start">Skip to contributor resources</a>
+<main class="page">
+  <iframe class="showcase" src="banner/index.html?motion=on" title="MDQ Blog Program featured stories" height="398"></iframe>
+  <nav class="page-nav" aria-label="On this page">
+    <a href="#start" class="active">Start here</a><a href="#status">Article status</a><a href="#assets">Prepare assets</a><a href="#resources">Guidance & templates</a><a href="#support">Get help</a>
+  </nav>
+  <div class="content">
+    <section class="start" id="start">
+      <h1>Start here</h1>
+      <div class="start-actions">
+        <a class="action-card primary" id="submit-link" target="_blank" rel="noopener noreferrer"><span class="action-overline">HAVE AN IDEA?</span><strong>Submit a blog proposal</strong><span>Tell us the story you want to share.</span></a>
+        <a class="action-card" id="workspace-link" target="_blank" rel="noopener noreferrer"><span class="action-overline">ALREADY CONTRIBUTING?</span><strong>Find your article workspace</strong><span>Pick up your draft, files, and next action.</span></a>
+        <button class="action-card" data-open="guide"><span class="action-overline">KNOW WHAT TO EXPECT</span><strong>Open the publication guide</strong><span>Your companion from submission to launch.</span></button>
+      </div>
+      <div class="quick-strip"><a href="#assets"><strong>Prepare your assets</strong><span>Image sizes, media hosting, and public access</span></a><a href="#support"><strong>Find the right contact</strong><span>Editorial, permissions, reviews, and media support</span></a></div>
+    </section>
+
+    <div class="work-grid">
+      <section id="status" class="status-section">
+        <div class="section-heading"><div><p class="eyebrow">KEEP YOUR STORY MOVING</p><h2>Article status & calendar</h2></div><a class="text-link tracker-link" target="_blank" rel="noopener noreferrer">Open full tracker</a></div>
+        <p class="section-intro">See the next action, then go straight to the current working files.</p>
+        <div class="tracker-panel">
+          <div class="tracker-toolbar"><div class="segmented" aria-label="Tracker display"><button class="selected" data-view="list" aria-pressed="true">Articles</button><button data-view="calendar" aria-pressed="false">Calendar</button></div></div>
+          <div class="tracker-filters"><label><span class="sr-only">Search articles</span><input id="article-search" type="search" placeholder="Find an article or next action" disabled></label><label><span class="sr-only">Filter by stage</span><select id="stage-filter" disabled><option value="">All stages</option><option>Content review</option><option>Technical review</option><option>Staging</option></select></label></div>
+          <div class="table-scroll" id="list-view"><table><thead><tr><th>Article / author</th><th>Stage</th><th>Target date</th><th>Next action</th><th><span class="sr-only">Workspace</span></th></tr></thead><tbody id="article-rows"></tbody></table></div>
+          <div id="calendar-view" hidden></div><p id="article-empty" class="empty-state" hidden>No articles match. Try another title or stage.</p>
+          <div class="tracker-footer"><span id="tracker-connection">SharePoint List connection required</span><a class="tracker-link" target="_blank" rel="noopener noreferrer">Go to your tracker</a></div>
+        </div>
+      </section>
+      <aside id="support" class="support">
+        <h2>Your program team</h2>
+        <div class="person"><span class="avatar" aria-hidden="true">KZ</span><div><strong>Katie Zoller</strong><a class="person-email" href="mailto:Katie.Zoller@microsoft.com">Katie.Zoller@microsoft.com</a><span>Editorial, publication & author access</span></div></div>
+        <div class="person"><span class="avatar light" aria-hidden="true">IP</span><div><strong>Ivan Pedroza</strong><a class="person-email" href="mailto:v-ipedroza@microsoft.com">v-ipedroza@microsoft.com</a><span>Publication Operations</span></div></div>
+        <div class="person"><span class="avatar light" aria-hidden="true">AK</span><div><strong>Anja Kurup</strong><a class="person-email" href="mailto:v-ankurup@microsoft.com">v-ankurup@microsoft.com</a><span>Publication Operations</span></div></div>
+      </aside>
+    </div>
+
+    <div class="resource-grid">
+      <section id="assets" class="asset-section">
+        <div class="section-heading"><h2>Prepare your assets</h2></div>
+        <div class="asset-workbench">
+          <div class="asset-tabs" role="tablist" aria-label="Asset type"><button role="tab" aria-selected="true" data-asset="images" id="tab-images" aria-controls="asset-detail">Images</button><button role="tab" aria-selected="false" data-asset="thumbnail" id="tab-thumbnail" aria-controls="asset-detail" tabindex="-1">Thumbnail</button><button role="tab" aria-selected="false" data-asset="video" id="tab-video" aria-controls="asset-detail" tabindex="-1">Video</button><button role="tab" aria-selected="false" data-asset="interactive" id="tab-interactive" aria-controls="asset-detail" tabindex="-1">Interactive</button><button role="tab" aria-selected="false" data-asset="downloads" id="tab-downloads" aria-controls="asset-detail" tabindex="-1">Downloads</button></div>
+          <div id="asset-detail" role="tabpanel" aria-labelledby="tab-images"></div>
+        </div>
+      </section>
+      <section id="resources" class="resource-section">
+        <h2>Guidance & templates</h2>
+        <div class="resource-list">
+          <button class="resource-row" data-open="guide"><span class="file-type word">WORD</span><span><strong>Publication guide</strong><span>v1.0 · Updated 29 Sep 2026</span><small>Document owner to confirm</small></span><span class="resource-action">Read</span></button>
+          <button class="resource-row" data-open="taxonomy"><span class="file-type excel">XLSX</span><span><strong>Discovery tag taxonomy</strong><span>Choose 1–4 relevant tags</span><small>Owner & update date to confirm</small></span><span class="resource-action">View</span></button>
+          <button class="resource-row" data-open="article-template"><span class="file-type word">WORD</span><span><strong>Article template</strong><span>A consistent starting point for your draft</span><small>Owner & update date to confirm</small></span><span class="resource-action">View</span></button>
+          <button class="resource-row" data-open="asset-templates"><span class="file-type slides">PPTX</span><span><strong>Asset templates</strong><span>Thumbnails, banners & supporting visuals</span><small>Owner & update date to confirm</small></span><span class="resource-action">View</span></button>
+        </div>
+      </section>
+    </div>
+
+    <section class="process-section" id="process">
+      <div class="section-heading"><div><h2>Blog Publication Path</h2></div><button class="text-link" data-open="process-map">View the process map</button></div>
+      <p class="section-intro">One path from submission to publication. Select a step for its owner and your next action.</p>
+      <div class="process-tabs" role="tablist" aria-label="Publication stages" id="process-tabs"></div>
+      <div class="process-detail" id="process-detail" role="tabpanel"></div>
+    </section>
+
+    <div class="help-grid">
+
+      <section class="troubleshooting" id="troubleshooting"><div class="section-heading"><div><h2>Common publishing problems</h2></div></div><label class="faq-search"><span class="sr-only">Search publishing problems</span><input id="faq-search" type="search" placeholder="Search images, video, access, tags…"></label><div id="faq-list"></div><p class="empty-state" id="faq-empty" hidden>No matching guidance. Try a broader term or contact Operations.</p></section>
+    </div>
+
+
+  </div>
+</main>
+<dialog id="resource-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><span class="eyebrow">CONTRIBUTOR RESOURCE</span><button id="close-dialog" class="close-button" aria-label="Close resource">Close</button></div><div id="dialog-body"></div></dialog>
+<div class="toast" id="toast" role="status" hidden></div>
+</body>
+</html>
